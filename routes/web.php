@@ -19,21 +19,5 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('blogs','BlogsController');
-Route::resource('/blogs',BlogsController::class);
-Route::delete('/blogs/{id}', 'BlogsController@destroy') 
-    ->name('blogs.destroy'); 
+Route::resource('blogs',BlogsController::class);

@@ -1,15 +1,18 @@
-@extends('blogs.layout')
+@extends('layouts.app')
+
 @section('content')
+
+
 
     <div class="row">
 
         <div class="col-lg-12 margin-tb">
 
-            <div class="pull-left">
+            <!-- <div class="pull-left">
 
                 <h2>Blog Listing</h2>
 
-            </div>
+            </div> -->
 
             <div class="pull-right">
 
